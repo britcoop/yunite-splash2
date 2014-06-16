@@ -1510,7 +1510,7 @@ a.anchor_top {
     padding: 10px;
     background-color: #fff;
     border-radius: 100%;
-    border-style: double;
+    border-style: none;
     border-color: #000;
 }
 
