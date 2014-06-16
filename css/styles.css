@@ -1545,6 +1545,8 @@ a.anchor_top {
 
 .features p {
   font: normal normal 14px/20px 'Oswald',;
+  font-size: 22;
+  font-weight: 1;
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
