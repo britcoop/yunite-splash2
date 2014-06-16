@@ -18,7 +18,7 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html,body').animate({
+        $('body').animate({
           scrollTop: target.offset().top
         }, 1000);
         return false;
@@ -120,7 +120,7 @@ $(function() {
             <div class="transparent">
               <div class="clear_bg">
 
-      <h2>Come together</h2>
+      <h1>Come together</h1>
 
      <div class="large-6 columns">
       <div class="row collapse">
