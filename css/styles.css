@@ -1417,6 +1417,7 @@ a.anchor_top {
   letter-spacing: .04em;
   text-transform: ;
   background-size: cover;
+  background:;
   z-index:1;
   margin-left: -73%;
   margin-right: -25%;
@@ -1534,6 +1535,8 @@ a.anchor_top {
 .features h2 {
   text-align: center;
   font: normal normal 42px/64px 'Oswald',;
+  font-size: 55;
+  letter-spacing: .03em;
   color: #F0FFFF   ;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1579,6 +1582,8 @@ a.anchor_top {
 .partners h2 {
   text-align: center;
   font: normal normal 42px/64px 'Montserrat', sans-serif;
+  font-size: 55;
+  letter-spacing: .03em;
   color: #47566E;   
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1633,6 +1638,8 @@ a.anchor_top {
 .close h2 {
   text-align: center;
   font: normal normal 42px/64px 'Montserrat', sans-serif;
+  font-size: 55;
+  letter-spacing: .03em;
   color: #F0FFFF   ;    
   padding-top: 30px;
   padding-bottom: 30px;
