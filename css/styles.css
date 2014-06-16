@@ -1310,7 +1310,7 @@
     font: normal normal 600 14px/20px 'Montserrat', sans-serif;
     list-style: none outside none;
     outline: rgb(255, 255, 255) none 0px;
-    padding: 4px 39px 4px 12px;
+    padding: 4px 10px 4px 10px;
     transition: color 0.2s ease 0s;
 }/*#A_113*/
 
@@ -1328,7 +1328,7 @@
     top: 4px;
     white-space: nowrap;
     width: 19px;
-    background: rgba(0, 0, 0, 0) url(http://www.chango.com/static/img/btn/arrow-orange.svg?b1395b667f83) no-repeat scroll 0% 0% / cover padding-box border-box;
+    background: rgba(0, 0, 0, 0)  no-repeat scroll 0% 0% / cover padding-box border-box;
     border: 0px none rgb(255, 255, 255);
     font: normal normal 600 14px/20px 'Montserrat', sans-serif;
     list-style: none outside none;
