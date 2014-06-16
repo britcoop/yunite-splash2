@@ -1487,12 +1487,24 @@ a.anchor_top {
 }
 
 .about h2 {
-  text-align: center;
-  font: normal normal 600 14px/20px 'Montserrat', sans-serif;
-  font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-size: cover;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 18px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 117px;
+    background: rgb(255, 113, 36) linear-gradient(300deg, rgb(255, 113, 36), rgb(255, 113, 36)) repeat-x scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 600 14px/20px 'Montserrat', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-size: cover;
+    align: center;
+
+
+
 }
 
 .about p {
