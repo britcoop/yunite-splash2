@@ -7,6 +7,7 @@
   <link href="css/pricing.css" rel="stylesheet">
   <link href="css/foundation.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Font+name">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width" initial-scale="1.0">
 
 <!-- smooth scroll -->
@@ -31,7 +32,8 @@ $(function() {
   </head>
 
 <body>
- <!--  header -->
+
+<!--  header -->
 <div id="DIV_1">
   <div id="DIV_2">
     <div id="DIV_3">
@@ -69,7 +71,7 @@ $(function() {
           <li id="LI_48">
           </li>
           <li id="LI_49">
-             <a href="#about" id="A_50">About</a>
+             <a href="about.html" id="A_50">About</a>
             <div id="DIV_51">
               <div id="DIV_52">
               </div>
@@ -106,35 +108,33 @@ $(function() {
   </div>
 </div>
 
+
 <!--END header-->
 
 <!-- section 1 and email form -->
 
 <div class="section1">
    <div class="row">
-    <div class="form"> 
 
+    <div class="form">     
 
-    <form data-abide>
+<!-- email form -->
+    <form method="post" action="mail.php">
      <div class="email-field">
-            <div class="transparent">
-              <div class="clear_bg">
 
-      <h1>Come together</h1>
+      <h1>Come together.</h1>
 
-     <div class="large-6 columns">
+    <div class="large-6 columns">
       <div class="row collapse">
         <div class="small-10 columns">
-          <input type="email" placeholder="email address">
+          <input type="email" name="email" placeholder="email address">
         </div>
             <div class="small-2 columns">
-          <a href="#" class="button postfix">Join</a>
+          <input type="submit" class="button postfix" value="Join">
         </div>
       </div>
     </div>
   <h3>Yunite is free to use! </br> Sign up for a free 30 day trial today.</h3>
-    </div> <!-- transparent -->
-
   </div>
 </form>
     </div> <!-- email field -->
@@ -142,7 +142,6 @@ $(function() {
 
  </div> <!-- row -->
 </div> <!-- section1 -->
-
 
 
 <!-- ABOUT SECTION -->
@@ -153,7 +152,8 @@ $(function() {
    <div class="row">
 
    <p>Yunite lets groups and associations manage people, collaborate </br> on projects, and engage constituents.</p>
-   <h2> Learn More </h2>
+
+   <center><a href="#features">Learn More</a></center>
 
    </div> <!-- row -->
 </div>
@@ -189,10 +189,12 @@ $(function() {
 
       <a name="partners" class="anchor"></a><h2>Partners</h2></a>
 
-      <ul class="small-block-grid-3">
-  <li><img src="css/img/irap.png"></li>
-  <li><!-- partner-image2 --></li>
-  <li><!-- partner-image3 --></li>
+      <ul class="small-block-grid-4">
+  <li><img src="css/img/iion2.png"></li>
+  <li><img src="css/img/oce2.png"></li>
+  <li><img src="css/img/bizinc2.png"></li>
+  <li><img src="css/img/irap2.png"></li>
+
 </ul>
 
    </div> <!-- row -->
@@ -231,7 +233,7 @@ $(function() {
 <dl class="sub-nav">
   <!-- <dt>Filter:</dt> -->
   <!-- <dd class="active"><a href="#index.html">Home</a></dd> -->
-  <dd><a href="#">Careers</a></dd>
+  <dd><a href="careers.html">Careers</a></dd>
   <dd><a href="#">Terms</a></dd>
   <dd><a href="#">Privacy</a></dd>
 </dl>

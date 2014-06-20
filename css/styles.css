@@ -1344,8 +1344,13 @@
 
 /*brit*/
 
-html,body
-{
+html {
+    height: 100%;
+}
+
+
+
+body{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -1357,8 +1362,8 @@ html,body
 a.anchor {
     display: block; 
     position: relative; 
-    top: -120px; 
     visibility: hidden;
+    top: -115px;
 }
 
 a.anchor_top {
@@ -1370,7 +1375,7 @@ a.anchor_top {
 
 .section1:before {
   content: "";
- background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(64,176,248,0.5), 
       rgba(64,176,248,0.5)
     ),
@@ -1378,8 +1383,7 @@ a.anchor_top {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: rgba(64,176,248,0.5);
-  /*background-repeat: no-repeat;*/
+  /*background-color: rgba(64,176,248,0.5);*/
   max-width: 100%;
   height: 73%;
   z-index: -1;
@@ -1393,35 +1397,17 @@ a.anchor_top {
   filter: blur(5px);
 }
 
-.transparent {
-  max-width: auto;
-  max-height:auto;
-  margin:30px 50px;
-  padding: 40px;
-  margin-right: -60%;
-  padding-left: 10%;
-  filter:alpha(opacity=50); /* For IE8 and earlier */
-  z-index: 0;
-}
-
-.transparent:hover {
-    background-color:rgba();
-}
-
-.section1 h2 {
+.section1 h1 {
   text-align: center;
-  font: normal normal 'Font-Awesome',;
-  font-size: 500%;
-  font-weight: 500;
-  font-style: block;
-  letter-spacing: .04em;
-  text-transform: ;
+  font-family: 'Lobster', cursive;
+  /*font-family: 'Oswald',;*/
+  font-size: 3.5rem;
+  letter-spacing: .009em;
   background-size: cover;
-  background:;
   z-index:1;
   margin-left: -73%;
   margin-right: -25%;
-  color:#F0FFFF ;
+  color:#fff;
   clear: both;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
@@ -1431,6 +1417,7 @@ a.anchor_top {
 .section1 h3 {
   text-align: center;
   font: normal normal 18px/32px 'Oswald',;
+  font-size: 1.8rem;
   letter-spacing: .03em;
   line-height: 1.3em;
   font-style: italic;
@@ -1446,47 +1433,39 @@ a.anchor_top {
 
 .section1 h4 {
   text-align: center;
-  font: normal normal 18px/30px 'Montserrat', sans-serif;
+  font: normal normal 18px/30px 'Oswald', sans-serif;
   background-size: cover;
   z-index:1;
   margin-right: 50%;
-
 }
 
 .section1 form {
-  width: 45%;
-  height: auto;
+  max-width: 80%;
+  /*height: auto;*/
   position: absolute;
-  top: 15%;
-  left: 25%;
-  border: 0px none rgb(255, 255, 255);
-  font: normal normal 14px/20px 'Montserrat', sans-serif;
-  overflow: hidden;
+  top: 22%;
+  left: 42%;
+  font: normal normal 14px/20px 'Oswald', sans-serif;
   z-index: 0;
-  clear: both;
-  margin-left: none;
-  margin-right: none;
+  /*clear: both;*/
 }
 
-.email-field {
-    /*margin-left: -100px;*/
-    overflow: hidden;
-}
 
 .about {
-  background: (255, 255, 255, 1);
+  /*background: (255, 255, 255, 1);*/
   max-width: 100%;
-  height: 30%;*/
+  height: auto;
   z-index: -1;
   padding-top: 25px;
   padding-bottom: 30px;
-  border: 0px none rgb(255, 255, 255);
-  font: normal normal 600 14px/20px 'Montserrat', sans-serif;
-  background-size: cover;
+  /*border: 0px none rgb(255, 255, 255);*/
+  font: normal normal 600 14px/20px 'Oswald', sans-serif;
+  /*background-size: cover;*/
   text-align: center;
+/*  position: relative;*/
 }
 
-.about h2 {
+.about a:link {
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     display: block;
@@ -1497,37 +1476,89 @@ a.anchor_top {
     background: rgb(255, 113, 36) linear-gradient(300deg, rgb(255, 113, 36), rgb(255, 113, 36)) repeat-x scroll 0% 0% / auto padding-box border-box;
     border: 0px none rgb(255, 255, 255);
     border-radius: 4px 4px 4px 4px;
-    font: normal normal 600 14px/20px 'Montserrat', sans-serif;
+    font: normal normal 600 14px/20px 'Oswald', sans-serif;
     padding-top: 10px;
     padding-bottom: 30px;
     background-size: cover;
-    align: center;
+    text-align: center;
+    z-index: 100;
+}
 
-
-
+.about body {
+  background-color: rgba(64,176,248,.5);
 }
 
 .about p {
-  border: 0px none rgb(255, 255, 255);
-  font: normal normal 'Montserrat',;
-  font-size: 200%;
+  font: normal normal 'Oswald',;
+  font-size: 1.6rem;
   text-align: center;
-  text-transform: ;
   color: #47566E;
   letter-spacing: 0.01em;
+}
+
+.about-page {
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+  max-width: 100%;
+  z-index: -1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(64,176,248,.5);
+}
+
+.about-page p {
+    font-family: 'Oswald';
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about-page h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
+  letter-spacing: .03em;
+  color: #F0FFFF;
+  padding-top: 100px;
+  padding-bottom: 30px;
   background-size: cover;
 }
 
-.about img {
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 100%;
-    border-style: none;
-    border-color: #000;
+.about-page img {
+    max-width: 900px;
+    max-height: auto;
 }
 
-.about img:hover {
-    background-color:rgba(0,150,255,0.7);
+.pricing-page {
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-size: cover;
+  background-color: rgba(64,176,248,.5);
+}
+
+.pricing-page p {
+    font-family: 'Oswald';
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.pricing-page h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
+  letter-spacing: .03em;
+  color: #F0FFFF;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-size: cover;
 }
 
 .features {
@@ -1536,20 +1567,18 @@ a.anchor_top {
   background: #fff;
   max-width: 100%;
   z-index: -1;
-  font: normal normal 600 14px/20px 'Montserrat', sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
   background-color: rgba(64,176,248,.5);
-
 }
 
 .features h2 {
   text-align: center;
-  font: normal normal 42px/64px 'Oswald',;
-  font-size: 55;
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
   letter-spacing: .03em;
-  color: #F0FFFF   ;
+  color: #F0FFFF;
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
@@ -1557,12 +1586,12 @@ a.anchor_top {
 
 .features p {
   font: normal normal 14px/20px 'Oswald',;
-  font-size: 22;
-  font-weight: 1;
+  font-size: 1.4rem;
+ /* font-weight:bold;*/
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
-  text-align: left;
+  text-align: center;
 }
 
 .features img {
@@ -1578,10 +1607,6 @@ a.anchor_top {
      background-color:rgba(0,150,255,0.7);
 }
 
-.features p {
-    text-align: center;
-    color: #47566E
-}
 .partners {
   background: (255, 255, 255, 1);
   max-width: 100%;
@@ -1596,12 +1621,13 @@ a.anchor_top {
 
 .partners h2 {
   text-align: center;
-  font: normal normal 42px/64px 'Montserrat', sans-serif;
-  font-size: 55;
+  /*font: normal normal 42px/64px 'Montserrat', sans-serif;*/
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
   letter-spacing: .03em;
   color: #47566E;   
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-size: cover;
 }
 
@@ -1610,18 +1636,6 @@ a.anchor_top {
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
-}
-
-.down img {
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 100%;
-    border-style: double;
-    border-color: #000;
-}
-
-.down img:hover {
-    background-color:rgba(0,150,255,0.7);
 }
 
 .close {
@@ -1639,6 +1653,7 @@ a.anchor_top {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  bottom: 0px
 }
 
 .close img {
@@ -1652,8 +1667,9 @@ a.anchor_top {
 
 .close h2 {
   text-align: center;
-  font: normal normal 42px/64px 'Montserrat', sans-serif;
-  font-size: 55;
+  /*font: normal normal 42px/64px 'Montserrat', sans-serif;*/
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
   letter-spacing: .03em;
   color: #F0FFFF   ;    
   padding-top: 30px;
@@ -1742,20 +1758,100 @@ a.anchor_top {
 
 .sub-nav dl{
     padding-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
 }
 
+.about-close {
+   max-height: 1000px;
+   max-width: 100%;
+   background-size: cover;
+}
+
+.careers-page {
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+  max-width: 100%;
+  z-index: -1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(64,176,248,.5);
+}
+
+.careers-page p {
+    font-family: 'Oswald';
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.careers-page h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
+  letter-spacing: .03em;
+  color: #F0FFFF;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-size: cover;
+}
+
+.careers-page img {
+    max-width: 900px;
+    max-height: auto;
+}
 
 /*MEDIA QUERIES*/
+/*
+@media all and (max-width: 1400px) {
+    .close form {margin-left: 20%; max-width: 60%;}
+}*/
 
-@media all and (min-height : 600px) {
-    .close form {left: 30%; max-width: 60%;}
+@media all and (max-width: 1030px) and (min-width: 1000px){
+    .close form {margin-left: 29%; max-width: 100%;}
+    .section1 form {top: 25%; left: 25%; max-width: 50%}
+    .section1 h1 {margin-left: -25%; font-size: 2.8rem; color: #fff;text-align: center;}
+    .section1 h3 {margin-left: -25%; font-size: 1.8rem;}
 }
 
 @media all and (max-width: 1000px) {
-    .close {padding-right: none;}
+    /*.close {padding-right: none;}*/
     .center a:link {display: block; margin-left: -75%; padding-right: none;}
-    .close form {margin-left: 22%; max-width: 80%;}
     .right1 img {clear:both;}
+    .section1 form {top: 25%; left: 25%; max-width: 50%}
+    .section1 h1 {margin-left: -25%; font-size: 2.8rem; color: #fff;text-align: center;}
+    .section1 h3 {margin-left: -25%; font-size: 1.8rem;}
+    .about p {font-size: 1.5rem;}
+    /*.features h2 {font-size: 2.5rem;}*/
+    .feautres  ul {font-size: 1.2rem}
+    .features {padding-left: 10px; padding-right: 10px;}
+    .close form {margin-left: 25%; max-width: 50%;}
     .row img {margin-bottom: 40px;}
+}
+
+@media all and (max-width: 800px) and (min-width: 400px) {
+
+    .section1 h1 {margin-left: -25%; font-size: 2.5rem; color: #fff;text-align: center;}
+    .section1 h3 {margin-left: -25%; font-size: 1.4rem;}
+    .section1 form {top: 25%; left: 24%; max-width: 60%}
+    .about p {font-size: 1.3rem;}
+    .features {padding-left: 10px; padding-right: 10px;}
+    .features p {font-size: 1.2rem; text-align: center}
+    .close form {margin-left: 22%; max-width: 60%;}
+    .row img {margin-bottom: 40px;}
+}
+
+@media all and (max-width: 400px) {
+
+    .section1 h1 {margin-left: -25%; font-size: 2.2rem; color: #fff;text-align: center;}
+    .section1 h3 {margin-left: -25%;font-size: 1.2rem; text-align: center; margin-left: 10px; margin-right: 10px;}
+    .section1 form {top: 25%; left: 3%; max-width: 100%}
+    .about p {font-size: 1.2rem;}
+    .features {padding-left: 10px; padding-right: 10px;}
+    .features p {font-size: 0.8rem; text-align: center;}
+    .close form {margin-left: 20%; max-width: 100%;}
+    .row img {margin-bottom: 40px;}
+}
 
 
