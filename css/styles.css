@@ -1739,6 +1739,17 @@ a.anchor_top {
   background-size: cover;
 }
 
+.pricing-page p {
+  text-align: center;
+  font-family: 'Oswald',;
+  font-size: 1.3rem;
+  letter-spacing: .03em;
+  color: #FFFFFF;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-size: cover;
+}
+
 
 /*CAREERS-PAGE*/
 
@@ -1764,7 +1775,7 @@ a.anchor_top {
 
 .careers-page h2 {
   text-align: left;
-  font-family: 'Lobster',;
+  font-family: 'Oswald',;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #FFFFFF;
