@@ -1399,7 +1399,7 @@ a.anchor_top {
 
 .section1 h1 {
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster',;
   /*font-family: 'Oswald',;*/
   font-size: 3.5rem;
   letter-spacing: .009em;
@@ -1425,7 +1425,7 @@ a.anchor_top {
   z-index:1;
   margin-left: -73%;
   margin-right: -25%;
-  color: #F0FFFF;
+  color: #FFFFFF;
   clear: both;
   padding-top: 0.2%;
   padding-bottom: 2.5%;
@@ -1513,7 +1513,7 @@ a.anchor_top {
 
 .features h1 {
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster',;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #FFFFFF;
@@ -1571,7 +1571,7 @@ a.anchor_top {
 .partners h2 {
   text-align: center;
   /*font: normal normal 42px/64px 'Montserrat', sans-serif;*/
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster',;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #47566E;   
@@ -1619,7 +1619,7 @@ a.anchor_top {
 .close h2 {
   text-align: center;
   /*font: normal normal 42px/64px 'Montserrat', sans-serif;*/
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster',;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #FFFFFF   ;    
@@ -1673,8 +1673,8 @@ a.anchor_top {
 }
 
 .about-page h2 {
-  text-align: center;
-  font-family: 'Lobster', cursive;
+  text-align: left;
+  font-family: 'Lobster', ;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #FFFFFF;
@@ -1717,13 +1717,24 @@ a.anchor_top {
     padding-right: 5%;
 }
 
-.pricing-page h2 {
+.pricing-page h1 {
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster',;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #FFFFFF;
   padding-top: 100px;
+  padding-bottom: 0px;
+  background-size: cover;
+}
+
+.pricing-page h2 {
+  text-align: center;
+  font-family: 'Lobster',;
+  font-size: 2.0rem;
+  letter-spacing: .03em;
+  color: #FFFFFF;
+  padding-top: 0px;
   padding-bottom: 60px;
   background-size: cover;
 }
@@ -1751,8 +1762,8 @@ a.anchor_top {
 }
 
 .careers-page h2 {
-  text-align: center;
-  font-family: 'Lobster', cursive;
+  text-align: left;
+  font-family: 'Lobster',;
   font-size: 3.2rem;
   letter-spacing: .03em;
   color: #FFFFFF;
