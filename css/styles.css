@@ -1511,26 +1511,35 @@ a.anchor_top {
   background-color: rgba(64,176,248,.5);
 }
 
-.features h2 {
+.features h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
   font-size: 3.2rem;
   letter-spacing: .03em;
-  color: #F0FFFF;
+  color: #FFFFFF;
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
 }
 
-.features p {
+.features h2 {
   font: normal normal 14px/20px 'Oswald',;
   font-size: 1.4rem;
  /* font-weight:bold;*/
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   background-size: cover;
   text-align: center;
 }
+
+.features p {
+    font: normal normal 'Oswald',;
+    font-size: 1.0rem;
+    text-align: center;
+    color: #47566E;
+    letter-spacing: 0.01em;
+}
+
 
 .features img {
     padding: 5px;
@@ -1613,7 +1622,7 @@ a.anchor_top {
   font-family: 'Lobster', cursive;
   font-size: 3.2rem;
   letter-spacing: .03em;
-  color: #F0FFFF   ;    
+  color: #FFFFFF   ;    
   padding-top: 30px;
   padding-bottom: 30px;
   background-size: cover;
@@ -1652,13 +1661,15 @@ a.anchor_top {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: rgba(64,176,248,.5);
+
 }
 
 .about-page p {
-    font-family: 'Oswald';
-    font-size: 18px;
-    padding-left: 5%;
-    padding-right: 5%;
+    font: normal normal 'Oswald',;
+    font-size: 1.0rem;
+    text-align: left;
+    color: #47566E;
+    letter-spacing: 0.01em;
 }
 
 .about-page h2 {
@@ -1673,8 +1684,9 @@ a.anchor_top {
 }
 
 .about-page img {
-    max-width: 900px;
+    max-width: 1000px;
     max-height: auto;
+
 }
 
 .about-close {
@@ -1731,10 +1743,11 @@ a.anchor_top {
 }
 
 .careers-page p {
-    font-family: 'Oswald';
-    font-size: 18px;
-    padding-left: 5%;
-    padding-right: 5%;
+  font: normal normal 'Oswald',;
+  font-size: 1.0rem;
+  text-align: left;
+  color: #47566E;
+  letter-spacing: 0.01em;
 }
 
 .careers-page h2 {
@@ -1749,7 +1762,7 @@ a.anchor_top {
 }
 
 .careers-page img {
-    max-width: 800px;
+    max-width: 1000px;
     max-height: auto;
 }
 
