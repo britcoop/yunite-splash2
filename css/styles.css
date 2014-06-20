@@ -1739,13 +1739,14 @@ a.anchor_top {
   background-size: cover;
 }
 
+
 /*CAREERS-PAGE*/
 
 .careers-page {
   text-align: center;
   vertical-align: middle;
   /*background: #fff;*/
-  max-width: 100%;
+  max-width: 100%;  
   max-height: 100%;
   z-index: -1;
   padding-top: 30px;
@@ -1777,7 +1778,41 @@ a.anchor_top {
     max-height: auto;
 }
 
+.terms-page {
+  text-align: center;
+  vertical-align: middle;
+  /*background: #fff;*/
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(64,176,248,.5);
+}
 
+.terms-page p {
+  font: normal normal 'Oswald',;
+  font-size: 1.0rem;
+  text-align: left;
+  color: #47566E;
+  letter-spacing: 0.01em;
+}
+
+.terms-page h2 {
+  text-align: left;
+  font-family: 'Lobster',;
+  font-size: 3.2rem;
+  letter-spacing: .03em;
+  color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-size: cover;
+}
+
+.terms-page img {
+    max-width: 1000px;
+    max-height: auto;
+}
 
 /*MEDIA QUERIES*/
 
