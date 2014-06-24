@@ -1,251 +1,268 @@
 <!DOCTYPE>
 <html>
 <head>
-  <title>Yunite</title>
+    <title>Yunite</title>
 
-  <link href="css/styles.css" rel="stylesheet">
-  <link href="css/pricing.css" rel="stylesheet">
-  <link href="css/foundation.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Font+name">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link href="css/foundation-5-3-0.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
-<!-- smooth scroll -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-<!-- End of SMOOTH SCROLL -->
-  </head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+
+    <!-- Adobe Typekit -->
+    <script type="text/javascript" src="http://use.typekit.net/rml7arq.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Font-Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/vendor/modernizr.min.js"></script>
+</head>
 
 <body>
 
-<!--  header -->
-<div id="DIV_1">
-  <div id="DIV_2">
-    <div id="DIV_3">
-      <a name="top" class="anchor_top"></a>
-      <a href="#top"><img src="img/yunite_logo.png"></a>
-    </div> <a href="#sr-content" id="A_5">Skip to content</a>    
-    <div id="DIV_6">      
-      <div id="DIV_7">
-        <ul id="UL_8">
-          <li id="LI_9"><span id="SPAN_10"><a href="tel:+" id="A_11"></a></span>
-          </li>
-          <li id="LI_12">
-            <a href="https://yunite.co" id="A_13">Login</a>
-          </li>
-        </ul>        
-        <ul id="UL_14">
-          <li id="LI_15">
-             <a href="/solutions" id="A_16"></a>
-            <div id="DIV_17">
-              <div id="DIV_18">
-              </div>
-            </div>
-          </li>
-          <li id="LI_30">
-          </li>
-          <li id="LI_31">
-             <a href="" id="A_32"></a>
-            <div id="DIV_33">
-              <div id="DIV_34">
-              </div>
-            </div>
-          </li>
-          <li id="LI_4">
-          </li>
-          <li id="LI_48">
-          </li>
-          <li id="LI_49">
-             <a href="about.html" id="A_50">About</a>
-            <div id="DIV_51">
-              <div id="DIV_52">
-              </div>
-            </div>
-          </li>
-          <li id="LI_62">
-          </li>
-          <li id="LI_63">
-             <a href="pricing.html" id="A_64">Pricing</a> 
-            <div id="DIV_65">
-              <div id="DIV_66">
-              </div>
-            </div>
-          </li>
-          <li id="LI_80">
-          </li>
-          <li id="LI_81">
-             <a href="http://blog.yunite.co/" id="A_82" target="_blank">Blog</a>
-            <div id="DIV_83">
-              <div id="DIV_84">
-              </div>
-            </div>
-          </li>
-          <li id="LI_110">
-          </li>
-        </ul>
-        <ul id="UL_111">
-          <li id="LI_112">
-            <a href="mailto:hi@yunite.co" id="A_113">CONTACT<span id="SPAN_114"></span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!--END header-->
-
-<!-- section 1 and email form -->
-
-<div class="section1">
-   <div class="row">
-
-    <div class="form">     
-
-<!-- email form -->
-    <form method="post" action="mail.php">
-     <div class="email-field">
-
-      <h1>Come together.</h1>
-
-    <div class="large-6 columns">
-      <div class="row collapse">
-        <div class="small-10 columns">
-          <input type="email" name="email" placeholder="email address">
+<!-- Start: Header -->
+<div class="header-bar">
+    <div class="row">
+        
+        <!-- Logo -->
+        <div class="large-3 medium-4 small-12 columns">
+            <a href="index.html">
+                <img src="img/yunite_logo.png" height="90">
+            </a>
         </div>
-            <div class="small-2 columns">
-          <input type="submit" class="button postfix" value="Join">
+
+        <!-- Links -->
+        <div class="large-9 medium-8 small-12 columns">
+            
+            <!-- Login & Signup Row -->
+            <div class="row link-row upper-row">
+                <div class="large-12 columns">
+                    <div class="alignment">
+                        <a href="https://yunite.co" class="login">Login</a>
+                        <span class="or">or</span>
+                        <a class="signup" href="/signup">Signup</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Items Row -->
+            <div class="row link-row lower-row">
+                <div class="large-12 columns">
+                    <div class="alignment">
+                        <a href="about.html">About</a>
+                        <a href="pricing.html">Pricing</a> 
+                        <a href="http://blog.yunite.co/" target="_blank">Blog</a>
+                        <a href="mailto:hi@yunite.co">Contact</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
-  <h3>Yunite is free to use! </br> Sign up and begin your trial today.</h3>
-  </div>
-</form>
-    </div> <!-- email field -->
-  </div> <!-- form -->
-
- </div> <!-- row -->
-</div> <!-- section1 -->
-
-
-<!-- ABOUT SECTION -->
-
-   <div class="about">
-    <a name="about" class="anchor"></a>
-
-   <div class="row">
-
-   <p>Yunite lets groups and associations manage people, collaborate </br> on projects, and engage constituents.</p>
-
-   <center><a href="#features">Learn More</a></center>
-
-   </div> <!-- row -->
 </div>
+<!--  End: Header-->
 
-<!-- FEATURES -->
 
+<!-- Start: Hero Area/Section 1 -->
+<div class="hero-area">
+        
+    <div class="row">
+        <div class="large-8 large-centered medium-10 medium-centered small-12 columns">
+            
+            <form method="post" action="mail.php">
+
+                <h1 class="text-center text white">Come together.</h1>
+
+                <h3 class="text-center text white">Sign up to create your free account.</h3>
+
+                <!-- <div class="row collapse">
+                    <div class="large-9 medium-9 small-9 columns">
+                        <input type="email" name="email" placeholder="email address">
+                    </div>
+                
+                    <div class="large-3 medium-3 small-3 columns">
+                        <input type="submit" class="button postfix" value="Join">
+                    </div>
+                </div> -->
+
+                <div class="row action-row">
+                    <div class="large-3 large-centered medium-4 medium-centered small-8 small-centered columns">
+                        <a href="#" class="button signup border-radius-big medium block center text uppercase bold">Sign Up</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+<!--   End: Hero Area/Section 1 -->
+
+
+<!-- Start: About Section -->
+<div class="row about">
+    <div class="large-12 columns">
+
+        <a name="about" class="anchor"></a>
+        
+        <p>Yunite lets groups and associations easily manage people, <br>collaborate on projects, and engage constituents.</p>
+
+        <a class="text-center button success success-alt medium text uppercase border-radius-big bold" href="#features">Learn More</a>
+
+    </div>
+</div>
+<!--   End: About Section -->
+
+
+<!-- Start: Features Section -->
 <div class="features">
-   <div class="row">
+    <div class="row">
+        <div class="large-12 medium-12 columns">
 
-     <a name="features" class="anchor"></a><h1>Features</h1>
+            <a name="features" class="anchor"></a>
 
-     <ul class="small-block-grid-3">
-      <li> <img src="css/img/members.png">
-        <h2>Member Management</h2>
-        <p>Attract, renew, and engage </br> your constituents with ease.</p></li>
-      <li>  <img src="css/img/tasks.png">
-        <h2>Task Management</h2>
-        <p>Keep track of every job on a project, </br> quickly telling you the who, when and why!</p></li>
-        <li><img src="css/img/events.png">
-          <h2>Event Management</h2>
-          <p>Tools to create and manage</br> all aspects of your events.</p></li>
+            <h1 class="section-header">Features</h1>
 
-        </ul>
+            <h6 class="section-note text white">Yunite provides the tools to effectively manage your group.</h6>
 
-      </br>
+            <ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-1">
+                <li>
+                    <i class="fa fa-group fa-3x"></i>
+                    <h2>Member Management</h2>
+                    <p>Attract, renew, and engage </br> your constituents with ease.</p>
+                </li>
 
-   </div> <!-- row -->
+                <li>
+                    <i class="fa fa-check-square-o fa-3x"></i>
+                    <h2>Task Management</h2>
+                    <p>Keep track of every project job <br> &amp; quickly track the who, when and why!</p>
+                </li>
 
+                <li>
+                    <i class="fa fa-calendar fa-3x"></i>
+                    <h2>Event Management</h2>
+                    <p>Tools to create and manage</br> all aspects of your events.</p>
+                </li>
+            </ul>
 
- </div> <!-- features -->
-</div>
+            <h3 class="text-center text white">All in one simple and beautiful platform.</h3>
 
-<!-- PARTNERS -->
-
- <div class="partners">
-   <div class="row">
-
-      <a name="partners" class="anchor"></a><h2>Partners</h2></a>
-
-      <ul class="small-block-grid-4">
-  <li><img src="css/img/iion2.png"></li>
-  <li><img src="css/img/oce2.png"></li>
-  <li><img src="css/img/bizinc2.png"></li>
-  <li><img src="css/img/irap2.png"></li>
-
-</ul>
-
-   </div> <!-- row -->
- </div> <!-- partners -->
-
-<!--  CLOSING SECTION -->
-
-  <div class="close">
-   <div class="row">
-
-    <a name="sign-up"><h2>Connect</h2></a>
-
-<!-- email entry-->
-
-    <form data-abide>
-
-     <div class="email-field">
-      <div class="large-6 columns">
-      <div class="row collapse">
-        <div class="small-10 columns">
-          <input type="email" placeholder="email address">
         </div>
-            <div class="small-2 columns">
-          <a href="#" class="button postfix">Join</a>
-        </div>
-      </div>
     </div>
-  </div>
-</form>
-
-  <a href="http://www.twitter.com/yunitenow" target="_blank"><img src="img/twitter.png">
-   <a href="http://www.facebook.com/yunitenow" target="_blank"><img src="img/fb.png">
-
-</div> <!-- row -->
-
-<dl class="sub-nav">
-  <dd><a href="index.html">Home</a></dd>
-  <dd><a href="careers.html">Careers</a></dd>
-  <dd><a href="terms.html">Terms</a></dd>
-  <dd><a href="privacy.html">Privacy</a></dd>
-</dl>
-
-
-    </div> <!-- right-->
-
-
-
 </div>
+<!--   End: Features Section -->
+
+
+<!-- Start: Partners Section -->
+<div class="partners">
+    <div class="row">
+        <div class="large-12 columns">
+            
+            <a name="partners" class="anchor"></a>
+
+            <h1 class="section-header">Partners</h1>
+
+            <ul class="large-block-grid-4 medium-block-grid-4 small-block-grid-2">
+                <li>
+                    <img src="img/partners/iion-wo_title-100_75.jpg" alt="iion" data-tooltip class="has-tip tip-bottom" title="iion - Innovation Initiatives Ontario North">
+                </li>
+                
+                <li>
+                    <img src="img/partners/oce-100_75.jpg" alt="OCE" data-tooltip class="has-tip tip-bottom" title="Ontario Centres of Excellence">
+                </li>
+
+                <li>
+                    <img src="img/partners/biz-inc-100_75.jpg" alt="Biz-Inc" data-tooltip class="has-tip tip-bottom" title="BizInc: The Student Business Incubator">
+                </li>
+
+                <li>
+                    <img src="img/partners/nrc-v3-100_75.jpg" alt="NRC" data-tooltip class="has-tip tip-bottom" title="NRC Industrial Research Assistance Program">
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!--   End: Partners Section -->
+
+
+<!-- Start: Closing Section -->
+<!-- <div class="row close">
+        
+    <div class="large-8 large-centered medium-10 medium-centered small-12 columns">
+        <h2>Connect</h2>
+                
+        <form data-abide>
+            <div class="email-field">
+                <div class="large-6 columns">
+                    <div class="row collapse">
+                        <div class="small-10 columns">
+                            <input type="email" placeholder="email address">
+                        </div>
+                        
+                        <div class="small-2 columns">
+                            <a href="#" class="button postfix">Join</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div> -->
+<!--   End: Closing Section -->
+    
+<!-- Start: Footer Menu -->
+    <dl class="sub-nav">
+        <div class="left other-links">
+            <dd><a href="index.html">Home</a></dd>
+            <!-- <dd><a href="careers.html">Careers</a></dd> -->
+            <!-- <dd><a href="terms.html">Terms</a></dd> -->
+            <dd><a href="privacy.html">Privacy</a></dd>
+        </div>
+
+        <div class="right">
+
+            <dd>
+                <a href="http://www.twitter.com/yunitenow" class="social twitter" target="_blank">
+                    <i class="fa fa-twitter"></i>&nbsp; Follow Us
+                </a>
+            </dd>
+
+            <dd class="separator"> and </dd>
+
+            <dd>
+                <a href="http://www.facebook.com/yunitenow" class="social facebook" target="_blank">
+                    <i class="fa fa-facebook"></i>&nbsp; Like Us
+                </a>
+            </dd>
+
+            <dd>
+                <i class="fa fa-smile-o"></i>&nbsp;
+            </dd>
+        </div>
+    </dl>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+    <!-- Smooth Scroll Script (?) -->
+    <script>
+    $(document).foundation();
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('body').animate({ scrollTop: target.offset().top }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
 </body>
 </html>
