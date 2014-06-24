@@ -1,84 +1,22 @@
+/* Yunite Splash Page */
+
+/* Start: General Styles */
 body, h1, h2, h3, h4, h5, h6, a, p, span {
     font-family: "rooney-sans", sans-serif !important;
 }
-.header-bar {
-    display: block;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DFDFDF;
-    font-size: 12px;
-    height: 90px;
-    line-height: 1.2;
-    position: fixed;
-    text-transform: uppercase;
+body {
     width: 100%;
-    z-index: 1001;
-}
-.header-bar img {
-    display: block;
-    margin: 0.75rem auto;
-    max-height: 60px;
-    width: auto;
-}
-.header-bar .upper-row,
-.header-bar .lower-row {
-    margin: 0.8rem 0;
-}
-.header-bar .alignment,
-.header-bar .alignment {
-    float: right !important;
-}
-.header-bar .link-row a {
-    border-radius: 2px; 
-    color: #43A9CA;
-    display: inline-block;
-    padding: 0.375rem 0.75rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-.header-bar .link-row a:hover,
-.header-bar .link-row a:focus {
-    background-color: orange;
-    color: #FFFFFF;
-}
-.header-bar .link-row a.active {
-    background-color: #43A9CA;
-    color: #FFFFFF;
-}
-.header-bar .link-row a.no-hover:hover,
-.header-bar .link-row a.no-hover:focus {
-    background-color: #FFFFFF;
-    color: #008CBA;
-    text-decoration: underline;
-}
-.header-bar .or {
-    border: 2px solid #EFEFEF;
-    color: #DFDFDF;
-    font-size: 0.75rem;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0 1rem;
-    padding: 0.3rem 0.25rem;
-    border-radius: 50%;
-}
-.header-bar a.signup {
-    color: #FFFFFF;
-    padding-bottom: 0.25rem;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
-.features li img {
-    max-width: 80px;
-    height: auto;
-}
-
-.hero-area {
-    width: 100%;
-    z-index: -999;
-    margin: 0;
-    padding: 12rem 0 7rem;
-    background-image: linear-gradient(rgba(67, 169, 202, 0.5), rgba(108, 95, 255, 0.5)), url("../img/yunite-hero.jpg");
-    background-attachment: fixed;
-    background-position: center 80%;
-    background-size: cover;
+a.anchor {
+    display: block; 
+    position: relative; 
+    visibility: hidden;
+    top: -115px;
 }
 
 .action-row {
@@ -99,21 +37,13 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     margin: 0 auto;
 }
 
-.section-header {
-    margin-bottom: 0 !important;
-    padding-bottom: 0.25rem !important;
-}
-.section-note {
-    color: #9c9c9c;
-    font-size: 0.8rem !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 2rem !important;
-    text-align: center;
-}
-
 .panel {
     background-color: #FFFFFF;
     border-radius: 4px;
+}
+.panel.highlight {
+    background-color: #EFEFEF;
+    border: 1px solid #DFDFDF;
 }
 
 .button.border-radius {
@@ -184,136 +114,79 @@ body, h1, h2, h3, h4, h5, h6, a, p, span {
     border: none;
     cursor: auto;
 }
-
-.sub-nav {
-    margin: 0.75rem 0;
-    padding: 0;
-}
-.sub-nav dt, .sub-nav dd, .sub-nav li {
-    margin: 0;
-}
+/*   End: General Styles */
 
 
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
 
-a.anchor {
-    display: block; 
-    position: relative; 
-    visibility: hidden;
-    top: -115px;
-}
-
-
-/* About Section */
-.about {
+/* Start: Header Bar */
+.header-bar {
+    display: block;
     background-color: #FFFFFF;
-    padding: 3rem 0 3rem;
-    text-align: center;
-    z-index: -1;
+    border-bottom: 1px solid #DFDFDF;
+    font-size: 12px;
+    height: 90px;
+    line-height: 1.2;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1001;
 }
-.about p {
-  font-size: 1.6rem;
-  text-align: center;
-  color: #47566E;
-  letter-spacing: 0.01em;
+.header-bar img {
+    display: block;
+    margin: 0.75rem auto;
+    max-height: 60px;
+    width: auto;
 }
-
-
-
-/*FEATURES*/
-.features {
-    text-align: center;
-    max-width: 100%;
-    padding: 3rem 0;
+.header-bar .upper-row,
+.header-bar .lower-row {
+    margin: 0.8rem 0;
+}
+.header-bar .alignment,
+.header-bar .alignment {
+    float: right !important;
+}
+.header-bar .link-row a {
+    border-radius: 2px; 
+    color: #43A9CA;
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.header-bar .link-row a:hover,
+.header-bar .link-row a:focus {
+    background-color: orange;
+    color: #FFFFFF;
+}
+.header-bar .link-row a.active {
     background-color: #43A9CA;
+    color: #FFFFFF;
 }
-
-.features h1 {
-  text-align: center;
-  color: #FFFFFF;
-  padding: 1rem 0;
-  background-size: cover;
+.header-bar .link-row a.no-hover:hover,
+.header-bar .link-row a.no-hover:focus {
+    background-color: #FFFFFF;
+    color: #008CBA;
+    text-decoration: underline;
 }
-.features h2 {
-  font-size: 1.4rem;
-  padding-top: 1rem;
-  padding-bottom: 0px;
-  text-align: center;
-}
-.features p,
-.features h2,
-.features .fa {
-    color: #053040;
-}
-.features .fa {
-    min-width: 105px;
-    width: 105px;
-    padding: 1.5rem;
+.header-bar .or {
+    border: 2px solid #EFEFEF;
+    color: #DFDFDF;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 1rem;
+    padding: 0.3rem 0.25rem;
     border-radius: 50%;
-    border: 3px solid #82C1D8;
 }
-.features .fa-check-square-o {
-    padding-right: 1.25rem;
-    padding-top: 1.625rem;
+.header-bar a.signup {
+    color: #FFFFFF;
+    padding-bottom: 0.25rem;
 }
+/*   End: Header Bar */
 
 
-/*PARTNERS*/
-.partners {
-  background: #FFFFFF;
-  max-width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.partners h1 {
-    padding: 1rem 0;
-    text-align: center;
-}
-.partners img {
-    display: block;
-    margin: 0 auto;
-    vertical-align: middle;
-}
 
-
-/*CLOSE/"CONNECT"*/
-.close {
-    background-color: rgba(64,176,248,.5);
-    border: none;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    max-width: 100%;
-    text-align: center;
-    z-index: -1;
-}
-
-.close h2 {
-  text-align: center;
-  font-size: 3.2rem;
-  letter-spacing: .03em;
-  color: #FFFFFF   ;    
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.close form {
-  width: 60%;
-  border: none;
-  overflow: hidden;
-  display: inline-block;
-  margin-left: 35%;
-  margin-right: 40%;
-}
-
-/* Footer Menu */
+/* Start: Footer Menu */
 .sub-nav {
     background-color: #FFFFFF;
     border-top: 1px solid #DFDFDF;
@@ -324,6 +197,10 @@ a.anchor {
 .sub-nav .separator {
     display: inline-block;
     margin: 0 0.75rem;
+}
+.sub-nav .other-links,
+.sub-nav .right {
+    margin-top: 0.25rem; 
 }
 .sub-nav .other-links a {
     color: #A7A7A7;
@@ -357,10 +234,119 @@ a.anchor {
     color: #E4E4E4;
     margin-right: 0.5rem;
 }
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+    margin: 0;
+}
+/*   End: Footer Menu */
 
 
 
-/* Single  Pages General Styling */
+/* Start: Home Page Styling */
+
+    /* General Section Styles */
+    .section-header {
+        margin-bottom: 0 !important;
+        padding-bottom: 0.25rem !important;
+    }
+    .section-note {
+        color: #9c9c9c;
+        font-size: 0.8rem !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 2rem !important;
+        text-align: center;
+    }
+
+
+    /* Start: Hero Section */
+    .hero-area {
+        width: 100%;
+        z-index: -999;
+        margin: 0;
+        padding: 12rem 0 7rem;
+        background-image: linear-gradient(rgba(67, 169, 202, 0.5), rgba(108, 95, 255, 0.5)), url("../img/yunite-hero.jpg");
+        background-attachment: fixed;
+        background-position: center 80%;
+        background-size: cover;
+    }
+    /*   End: Hero Section */
+
+
+    /* Start: About Section */
+    .about {
+        background-color: #FFFFFF;
+        padding: 3rem 0 3rem;
+        text-align: center;
+        z-index: -1;
+    }
+    .about p {
+      font-size: 1.6rem;
+      text-align: center;
+      color: #47566E;
+      letter-spacing: 0.01em;
+    }
+    /*   End: About Section */
+
+
+    /* Start: Features Section */
+    .features {
+        text-align: center;
+        max-width: 100%;
+        padding: 3rem 0;
+        background-color: #43A9CA;
+    }
+    .features h1 {
+      text-align: center;
+      color: #FFFFFF;
+      padding: 1rem 0;
+    }
+    .features h2 {
+      font-size: 1.4rem;
+      padding-top: 1rem;
+      padding-bottom: 0px;
+      text-align: center;
+    }
+    .features p,
+    .features h2,
+    .features .fa {
+        color: #053040;
+    }
+    .features .fa {
+        min-width: 105px;
+        width: 105px;
+        padding: 1.5rem;
+        border-radius: 50%;
+        border: 3px solid #82C1D8;
+    }
+    .features .fa-check-square-o {
+        padding-right: 1.25rem;
+        padding-top: 1.625rem;
+    }
+    /*   End: Features Section */
+
+
+    /* Start: Partners Section */
+    .partners {
+      background: #FFFFFF;
+      max-width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .partners h1 {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .partners img {
+        display: block;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+    /*   End: Partners Section */
+
+/*   End: Home Page Styling */
+
+
+
+/* Start: Single Pages General Styling */
 .single-page {
     background-color: #43A9CA;
 }
@@ -373,12 +359,11 @@ a.anchor {
     padding: 2rem 0 2.5rem;
     text-align: center;
 }
+/*   End: Single Pages General Styling */
 
 
-/* About Page */
-/*.about-page {
-}*/
 
+/* Start: About Page */
 .about-page img {
     display: block;
     margin: 1rem auto 1rem;
@@ -386,26 +371,15 @@ a.anchor {
     max-width: 1000px;
     max-height: auto;
 }
-
 .about-close {
    max-height: 1000px;
    max-width: 100%;
 }
-
-
-/* Pricing-Page */
-/*.pricing-page {
-}*/
-
-/*.terms-page {
-}*/
-
-/*.privacy-page {
-}*/
+/*  End: About Page */
 
 
 
-/* MEDIA QUERIES */
+/* Start: Media Queries */
 @media only screen and (max-width: 40em) {
     .header-bar {
         height: 200px;
@@ -434,3 +408,5 @@ a.anchor {
         text-align: center;
     }
 }
+
+/*   End: Media Queries */

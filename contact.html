@@ -51,7 +51,7 @@
                 <div class="large-12 columns">
                     <div class="alignment">
                         <a href="about.html">About</a>
-                        <a class="active" href="pricing.html">Pricing</a> 
+                        <a href="pricing.html">Pricing</a> 
                         <a href="http://blog.yunite.co/" target="_blank">Blog</a>
                         <a href="mailto:hi@yunite.co">Contact</a>
                     </div>
@@ -64,58 +64,55 @@
 <!--  End: Header-->
 
 
-<!-- PRICING-PAGE -->
-<div class="pricing-page page-area">
+<!-- Start: Contact Page -->
+<div class="contact-page page-area">
     <div class="row">
         <div class="large-12 columns">
             
-            <h1 class="page-title">Pricing</h1>
+            <h1 class="page-title">Contact Us</h1>
 
             <div class="panel">
-                <h2 class="text-center">Free for teams of up to 4.</h2>
-                <p class="text-center">Call <a href="callto:1-888-317-0754"> 1-888-317-0754</p>
-
-                <div id="pricing-table" class="row collapse">
-                    <div id="standard" class="large-4 columns">
-                        <ul class="pricing-table">
-                            <li class="title">Basic</li>
-                            <li class="price">Free</li>
-                            <li class="description">Up to 4 Users</li>
-                            <li class="bullet-item">Refer Users and Build Your Group for Free!</li>
-                            <li class="bullet-item">Regular Support</li>
-                            <li class="cta-button"><a class="button secondary border-radius" href="http://yunite.ca/accounts/signup/">Sign Up</a></li>
-                        </ul>
-                    </div>
-                
-                    <div id="premium" class="large-4 columns">
-                        <ul class="pricing-table">
-                            <li class="title">Early Supporter</li>
-                            <li class="price">$7</li>
-                            <li class="description">Per User / Month</li>
-                            <li class="bullet-item">4 Free Users</li>
-                            <li class="bullet-item">Premium Support</li>
-                            <li class="cta-button"><a class="button success-alt border-radius" href="http://yunite.ca/accounts/signup/">Signup &amp; Buy Now</a></li>
-                        </ul>
+                <div class="row">
+                    
+                    <div class="large-6 medium-6 small-12 columns">
+                        <p class="show-for-medium-up">You can contact us using the following information or the adjacent form:</p>
+                        <p class="show-for-small-only">You can contact us using the following information or the form below:</p>
+                        <p><i class="fa fa-phone"></i>&nbsp; Telephone: <a href="callto:1-888-317-0754">1-888-317-0754</a></p>
+                        <p><i class="fa fa-envelope"></i>&nbsp; Email: <a href="mailto:contact@yunite.co">contact@yunite.co</a></p>
                     </div>
 
-                    <div id="ultimate" class="large-4 columns">
-                        <ul class="pricing-table">
-                            <li class="title">Enterprise</li>
-                            <li class="price">Call Us!</li>
-                            <li class="description">Annual Subscription </br> </li>
-                            <li class="bullet-item">Custom Solutions</li>
-                            <li class="bullet-item">Dedicated Support</li>
-                            <li class="cta-button"><a class="button secondary border-radius" href="callto:1-888-317-0754">Call Us!</a></li>
-                        </ul>
+                    <div class="large-6 medium-6 small-12 columns">
+                        <div class="panel highlight">
+                            
+                            <form method="post" action="classes/contact.php" name="contactform" id="contactform">
+
+                                <label for="name">Name (required):</label>
+                                <input name="name" type="text" id="name" size="30" value="" />
+
+                                <label for="email">Email (required):</label>
+                                <input name="email" type="text" id="email" size="30" value="" />
+
+                                <label for="phone">Phone (required):</label>
+                                <input name="phone" type="text" id="phone" size="30" value="" />
+
+                                <label for="comment">Comment (required):</label>
+                                <textarea name="comment" cols="40" rows="3" id="comment"></textarea>
+
+                                <br>
+                                <input type="submit" class="button success-alt small text bold uppercase" id="submit" value="Submit" />
+
+                            </form>
+                        </div>
                     </div>
+
                 </div>
-                
             </div>
-            
 
         </div>
     </div>
 </div>
+<!--   End: Contact Page -->
+
 
     
 <!-- Start: Footer Menu -->
@@ -149,8 +146,8 @@
         </div>
     </dl>
     
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ajax-form.js"></script>
     <script src="js/foundation.min.js"></script>
 
     <script>
